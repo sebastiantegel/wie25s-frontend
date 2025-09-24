@@ -16,4 +16,4 @@ Kom ihåg att alltid hämta den senaste versionen efter varje föreläsning så 
 git pull
 ```
 
-i en terminal. 
+i en terminal där ert projekt är öppet.
