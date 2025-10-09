@@ -66,10 +66,16 @@ const createHtml = () => {
 
   // Skapa html för alla objekt i listan
   for (let i = 0; i < cars.length; i++) {
+    // Skapa en <div>
     const carContainer = document.createElement("div");
+
+    // Skapa en <h2>
     const manufacturerTag = document.createElement("h2");
+
+    // Skapa en <h3>
     const modelTag = document.createElement("h3");
 
+    // Placera innehåll i taggarna
     manufacturerTag.innerHTML = cars[i].manufacturer;
     modelTag.innerHTML = cars[i].model;
 
