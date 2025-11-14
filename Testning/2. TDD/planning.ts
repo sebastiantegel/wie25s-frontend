@@ -15,3 +15,19 @@
 // 4. Skriv kod -> 6h
 
 // 5. Styling -> 6h
+
+// --------------------------------------------
+// User story
+// Som en användare vill jag kunna ta bort en todo när den är klar för att den inte skall ta plats i listan
+
+// Det skall finnas en ta bort knapp.
+// Todon skall tas bort helt, behöver inte sparas någonstans.
+// Styling...
+
+// Skapa test - remove todo by clicking remove button - 4h
+
+// Skriva html - 2h
+
+// Skriva kod - 4h
+
+// Styling - 2h
