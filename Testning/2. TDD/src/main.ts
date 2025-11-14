@@ -1,6 +1,6 @@
 import { createHtml } from "./htmlUtils";
 import { Todo } from "./models/Todo";
-import "./style.css";
+import "./style.scss";
 
 const todos: Todo[] = [];
 
