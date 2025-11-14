@@ -15,4 +15,16 @@ describe("Todo tests", () => {
     // Assert
     cy.get("li").last().should("contain.text", text);
   });
+
+  it("should add todo by pressing enter", () => {
+    // Assign
+    const text = "Lorem ipsum";
+    // const numberOfLisAtStart = cy.get("li");
+
+    // Act
+    cy.get("input#todoText").type(`${text}{enter}`);
+
+    // Assert
+    cy.get("li").last().should("contain.text", text);
+  });
 });
