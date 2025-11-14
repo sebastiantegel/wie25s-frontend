@@ -27,4 +27,18 @@ describe("Todo tests", () => {
     // Assert
     cy.get("li").last().should("contain.text", text);
   });
+
+  it("should remove todo when clicking remove", () => {
+    // Assign
+    const text = "Lorem ipsum";
+    cy.get("input#todoText").type(text);
+    cy.get("button#save").click();
+    cy.get("li").last().should("contain.text", text);
+
+    // Act
+    cy.get("li button.remove").last().click();
+
+    // Assert
+    cy.get("li").should("have.length", 0);
+  });
 });
