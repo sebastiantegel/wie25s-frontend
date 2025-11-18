@@ -1,4 +1,4 @@
-import { createHtml } from "./htmlUtils";
+import { createErrorHtml, createHtml } from "./htmlUtils";
 import { searchPokemon } from "./services/PokemonService";
 import "./style.css";
 
@@ -15,5 +15,10 @@ document.getElementById("searchForm")?.addEventListener("submit", async (e) => {
   if (searchText == "") return;
 
   const pokemon = await searchPokemon(searchText);
-  createHtml(pokemon);
+
+  if (pokemon) {
+    createHtml(pokemon);
+  } else {
+    createErrorHtml();
+  }
 });

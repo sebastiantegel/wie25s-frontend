@@ -1,0 +1,20 @@
+{
+  "name": "pikachu",
+  "sprites": {
+    "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+    "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/25.png"
+  },
+  "id": 1,
+  "order": 1,
+  "weight": 1,
+  "height": 1,
+  "types": [
+    {
+      "slot": 1,
+      "type": {
+        "name": "electric",
+        "url": ""
+      }
+    }
+  ]
+}

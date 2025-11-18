@@ -38,3 +38,14 @@ export const createHtml = (pokemon: Pokemon) => {
   container?.appendChild(imgContainer);
   container?.appendChild(typeList);
 };
+
+export const createErrorHtml = () => {
+  const container = document.getElementById("pokemon");
+
+  if (container) {
+    const error = document.createElement("div");
+    error.className = "error";
+    error.innerHTML = "Oj oj oj, nu blev det fel i backend :)";
+    container.appendChild(error);
+  }
+};
