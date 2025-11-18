@@ -7,7 +7,14 @@
     <title>3. Mocks in cypress</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <form id="searchForm">
+        <label for="searchText">Pokemon:</label>
+        <input type="text" placeholder="T.ex. Pikachu" id="searchText" />
+        <button>Sök</button>
+      </form>
+      <section id="pokemon"></section>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
