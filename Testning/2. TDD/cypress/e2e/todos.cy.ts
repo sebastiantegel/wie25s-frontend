@@ -19,12 +19,18 @@ describe("Todo tests", () => {
   it("should add todo by pressing enter", () => {
     // Assign
     const text = "Lorem ipsum";
-    // const numberOfLisAtStart = cy.get("li");
+    let numberOfLisAtStart = 0;
+    cy.get("li")
+      .its("length")
+      .then((length) => {
+        numberOfLisAtStart = length;
+      });
 
     // Act
     cy.get("input#todoText").type(`${text}{enter}`);
 
     // Assert
+    cy.get("li").should("have.length", numberOfLisAtStart + 1);
     cy.get("li").last().should("contain.text", text);
   });
 
