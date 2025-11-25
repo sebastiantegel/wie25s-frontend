@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>15--ts-bom</title>
+  </head>
+  <body>
+    <div id="app">
+      <section>
+        <h2>setInterval</h2>
+        <button id="intervalStart">Starta</button>
+        <button id="intervalEnd">Sluta</button>
+        <h1 id="intervalResult">0</h1>
+      </section>
+
+      <section>
+        <h2>geolocation</h2>
+        <button id="geoStartOnce">Starta en gång</button>
+        <button id="geoStart">Starta</button>
+        <button id="geoEnd">Sluta</button>
+        <ul id="geoResult"></ul>
+      </section>
+
+      <section>
+        <input type="number" id="fnumber" />
+        <button id="calc">Räkna</button>
+      </section>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
